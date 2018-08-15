@@ -1,0 +1,34 @@
+{% extends "main.html" %}
+{% block content %}
+<div class="breadcrumb">
+  <ul>
+    <li><a href="{{url_for('showCatalog')}}">Home</a><i class="icon-ctrl"></i></li>
+    <li>{{category.name}}</li>
+  </ul>
+</div>
+<h1>Bible verses</h1>
+<hr>
+<p>Read a bible verse below on {{category.name}}.</p>
+<div class="row">
+  <nav>
+    <h2>Categories</h2>
+    <ul class="list-unstyled">
+      {% for i in categories %}
+      <li>
+        <a href="{{url_for('showCategories', category_id = i.id)}}">{{i.name}}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <article>
+    <h2>{{category.name}}</h2>
+    <ul class="list-unstyled">
+      {% for i in items %}
+      <li>
+        <a href="{{url_for('showItem', category_id=category.id ,items_id=i.id)}}">{{i.name}}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </article>
+</div>
+{% endblock %}

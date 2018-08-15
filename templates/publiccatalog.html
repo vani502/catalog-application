@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+{% block content %}
+<h1>Bible verses</h1>
+<hr>
+<p>Read collections of bible verses for Faith, Hope, Love, Thankfulness
+  and Forgiveness.</p>
+<div class="row">
+  <nav>
+    <h2>Categories</h2>
+    <ul class="list-unstyled">
+      {% for i in category %}
+      <li>
+        <a href="{{url_for('showCategories', category_id = i.id)}}">{{i.name}}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <article>
+    <h2>Latest Verses</h2>
+    <ul class="list-unstyled">
+      {% for i in items %}
+      <li>
+        <a href="{{url_for('showItem', category_id=i.category_id, items_id=i.id)}}">{{i.name}} - <i>{{i.category.name}}</i></a>
+      </li>
+      {% endfor %}
+    </ul>
+  </article>
+</div>
+{% endblock %}

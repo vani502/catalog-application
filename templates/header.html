@@ -1,0 +1,11 @@
+<div class="row header-content">
+	<a href="{{url_for('showCatalog')}}">
+		<i class="icon-home"></i> Catalog Application</a>
+	<div>
+		{%if 'username' not in session %}
+		<a href="{{url_for('showLogin')}}" class="btn">Login</a>
+		{% else %}
+		<a href="{{url_for('disconnect')}}" class="btn">Logout</a>
+		{% endif %}
+	</div>
+</div>

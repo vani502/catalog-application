@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+{% block content %}
+<div class="item">
+  <div class="breadcrumb">
+    <ul>
+      <li><a href="{{url_for('showCatalog')}}">Home</a><i class="icon-ctrl"></i></li>
+      <li><a href="{{url_for('showCategories', category_id=category.id)}}">{{category.name}}</a><i class="icon-ctrl"></i></li>
+      <li>{{items.name}}</li>
+    </ul>
+  </div>
+  <h1>{{items.name}}</h1>
+  <hr>
+  <p class="description">{{items.description}}</p>
+</div>
+{% endblock %}
