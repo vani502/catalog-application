@@ -32,7 +32,7 @@ Start the virtual machine
 
 Download the application
 
-* Download and upzip
+* Download and upzip https://github.com/vani502/catalog-application
 * Place the cloned or downloaded files inside the catalog folder
 
 
@@ -42,7 +42,3 @@ Download the application
 * Type **python lotsofitems.py** to populate the database
 * Type **python project.py** to run the Flask web server
 * In your browser visit **http://localhost:5000** to view the catalog application. You should be able to view a public version of the catalog. When logged in you can add, edit, and delete items you create.
-
-
-## Running the Restaurant Menu App
-Once it is up and running, type **vagrant ssh**. This will log your terminal into the virtual machine, and you'll get a Linux shell prompt. When you want to log out, type **exit** at the shell prompt.  To turn the virtual machine off (without deleting anything), type **vagrant halt**. If you do this, you'll need to run **vagrant up** again before you can log into it.
