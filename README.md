@@ -42,3 +42,9 @@ Download the application
 * Type **python lotsofitems.py** to populate the database
 * Type **python project.py** to run the Flask web server
 * In your browser visit **http://localhost:5000** to view the catalog application. You should be able to view a public version of the catalog. When logged in you can add, edit, and delete items you create.
+
+
+## Attributions
+
+* Bible verses taken from the NIV version of the Holy Bible
+* Icons used are from https://icomoon.io/app/
