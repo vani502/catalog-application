@@ -80,7 +80,15 @@ a:active, a:hover {
 	align-items: center;
 	background-color: #d2d2d2;
 	height: 75px;
-	padding-left: 20px;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+.banner p {
+	align-self: flex-end;
+	font-size: .8em;
+	font-style: italic;
+	padding-bottom: 5px;
 }
 
 nav {
@@ -280,6 +288,15 @@ ul.list-unstyled {
 
 	.row {
 		flex-flow: row wrap;
+	}
+
+	.banner {
+		height: auto;
+		padding: 10px;
+	}
+
+	.banner p {
+		padding: 10px 0 0;
 	}
 
 	nav {
