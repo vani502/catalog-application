@@ -20,8 +20,9 @@ session = DBSession()
 
 
 # Create dummy user
-User1 = User(name="Robo Barista", email="tinnyTim@udacity.com",
-             picture='https://pbs.twimg.com/profile_images/2671170543/18debd694829ed78203a5a36dd364160_400x400.png')
+User1 = User(name="User One", email="user1_xx@google.com",
+             picture="https://pbs.twimg.com/profile_images/"
+             "2671170543/18debd694829ed78203a5a36dd364160_400x400.png")
 session.add(User1)
 session.commit()
 
@@ -32,20 +33,26 @@ session.add(category1)
 session.commit()
 
 
-categoryItem1 = CategoryItem(user_id=1, name="Psalm 9:10", description="Those who know your name trust in you, for you, LORD, have never forsaken those who seek you.",
-                     category=category1)
+categoryItem1 = CategoryItem(user_id=1, name="Psalm 9:10",
+                             description="Those who know your name trust in "
+                             "you, for you, LORD, have never forsaken those "
+                             "who seek you.", category=category1)
 
 session.add(categoryItem1)
 session.commit()
 
-categoryItem2 = CategoryItem(user_id=1, name="2 Chronicles 20:20", description="Have faith in the LORD your God and you will be upheld; have faith in his prophets and you will be successful.",
-                     category=category1)
+categoryItem2 = CategoryItem(user_id=1, name="2 Chronicles 20:20",
+                             description="Have faith in the LORD your God "
+                             "and you will be upheld; have faith in his "
+                             "prophets and you will be successful.",
+                             category=category1)
 
 session.add(categoryItem2)
 session.commit()
 
-categoryItem3 = CategoryItem(user_id=1, name="Psalm 46:10", description="Be still, and know that I am God.",
-                     category=category1)
+categoryItem3 = CategoryItem(user_id=1, name="Psalm 46:10", description="Be "
+                             "still, and know that I am God.",
+                             category=category1)
 
 session.add(categoryItem3)
 session.commit()
@@ -58,20 +65,29 @@ session.add(category2)
 session.commit()
 
 
-categoryItem1 = CategoryItem(user_id=1, name="Jeremiah 29:11", description="For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope.",
-                     category=category2)
+categoryItem1 = CategoryItem(user_id=1, name="Jeremiah 29:11",
+                             description="For I know the plans I have for "
+                             "you, declares the Lord, plans to prosper you "
+                             "and not to harm you, plans to give you hope "
+                             "and a future.",
+                             category=category2)
 
 session.add(categoryItem1)
 session.commit()
 
-categoryItem2 = CategoryItem(user_id=1, name="Romans 15:13", description="May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.",
-                     category=category2)
+categoryItem2 = CategoryItem(user_id=1, name="Romans 15:13",
+                             description="May the God of hope fill you with "
+                             "all joy and peace as you trust in him, so that "
+                             "you may overflow with hope by the power of the "
+                             "Holy Spirit.", category=category2)
 
 session.add(categoryItem2)
 session.commit()
 
-categoryItem3 = CategoryItem(user_id=1, name="Romans 12:12", description="Rejoice in hope, be patient in tribulation, be constant in prayer.",
-                     category=category2)
+categoryItem3 = CategoryItem(user_id=1, name="Romans 12:12",
+                             description="Be joyful in hope, patient in "
+                             "affliction, faithful in prayer.",
+                             category=category2)
 
 session.add(categoryItem3)
 session.commit()
@@ -84,20 +100,26 @@ session.add(category3)
 session.commit()
 
 
-categoryItem1 = CategoryItem(user_id=1, name="1 Corinthians 13:13", description="And now these three remain: faith, hope and love. But the greatest of these is love.",
-                     category=category3)
+categoryItem1 = CategoryItem(user_id=1, name="1 Corinthians 13:13",
+                             description="And now these three remain: faith, "
+                             "hope and love. But the greatest of these is "
+                             "love.", category=category3)
 
 session.add(categoryItem1)
 session.commit()
 
-categoryItem2 = CategoryItem(user_id=1, name="Romans 13:10", description="Love does no harm to a neighbor. Therefore love is the fulfillment of the law.",
-                     category=category3)
+categoryItem2 = CategoryItem(user_id=1, name="Romans 13:10",
+                             description="Love does no harm to a neighbor. "
+                             "Therefore love is the fulfillment of the law.",
+                             category=category3)
 
 session.add(categoryItem2)
 session.commit()
 
-categoryItem3 = CategoryItem(user_id=1, name="1 John 4:11", description="Dear friends, since God so loved us, we also ought to love one another.",
-                     category=category3)
+categoryItem3 = CategoryItem(user_id=1, name="1 John 4:11",
+                             description="Dear friends, since God so loved "
+                             "us, we also ought to love one another.",
+                             category=category3)
 
 session.add(categoryItem3)
 session.commit()
@@ -110,14 +132,18 @@ session.add(category4)
 session.commit()
 
 
-categoryItem1 = CategoryItem(user_id=1, name="1 Chronicles 16:34", description="Give thanks to the LORD, for he is good; his love endures forever.",
-                     category=category4)
+categoryItem1 = CategoryItem(user_id=1, name="1 Chronicles 16:34",
+                             description="Give thanks to the LORD, for he is "
+                             "good; his love endures forever.",
+                             category=category4)
 
 session.add(categoryItem1)
 session.commit()
 
-categoryItem2 = CategoryItem(user_id=1, name="1 Thessalonians 5:18", description="give thanks in all circumstances; for this is God's will for you in Christ Jesus.",
-                     category=category4)
+categoryItem2 = CategoryItem(user_id=1, name="1 Thessalonians 5:18",
+                             description="give thanks in all circumstances; "
+                             "for this is God's will for you in Christ Jesus.",
+                             category=category4)
 
 session.add(categoryItem2)
 session.commit()
@@ -130,18 +156,22 @@ session.add(category5)
 session.commit()
 
 
-categoryItem1 = CategoryItem(user_id=1, name="Ephesians 1:7", description="In him we have redemption through his blood, the forgiveness of sins, in accordance with the riches of God's grace",
-                     category=category5)
+categoryItem1 = CategoryItem(user_id=1, name="Ephesians 1:7",
+                             description="In him we have redemption through "
+                             "his blood, the forgiveness of sins, in "
+                             "accordance with the riches of God's grace",
+                             category=category5)
 
 session.add(categoryItem1)
 session.commit()
 
-categoryItem2 = CategoryItem(user_id=1, name="Psalm 103:12", description="as far as the east is from the west, so far has he removed our transgressionsfrom us.",
-                     category=category5)
+categoryItem2 = CategoryItem(user_id=1, name="Psalm 103:12",
+                             description="as far as the east is from the "
+                             "west, so far has he removed our transgressions "
+                             "from us.", category=category5)
 
 session.add(categoryItem2)
 session.commit()
-
 
 
 print "added category items!"
